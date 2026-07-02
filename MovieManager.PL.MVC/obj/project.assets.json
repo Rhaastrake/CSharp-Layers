@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "MovieManager.BLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "MovieManager.DAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MovieManager.BLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MovieManager.BLL.dll": {}
+        }
+      },
+      "MovieManager.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/MovieManager.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MovieManager.DAL.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "MovieManager.BLL/1.0.0": {
+      "type": "project",
+      "path": "../MovieManager.BLL/MovieManager.BLL.csproj",
+      "msbuildProject": "../MovieManager.BLL/MovieManager.BLL.csproj"
+    },
+    "MovieManager.DAL/1.0.0": {
+      "type": "project",
+      "path": "../MovieManager.DAL/MovieManager.DAL.csproj",
+      "msbuildProject": "../MovieManager.DAL/MovieManager.DAL.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "MovieManager.BLL >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\A440apulia\\.nuget\\packages\\": {}
@@ -31,7 +68,11 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\A440apulia\\Desktop\\Programmazione\\C#\\MovieManager\\MovieManager.BLL\\MovieManager.BLL.csproj": {
+              "projectPath": "C:\\Users\\A440apulia\\Desktop\\Programmazione\\C#\\MovieManager\\MovieManager.BLL\\MovieManager.BLL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
