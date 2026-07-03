@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MovieManager.BLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+600575413a95158db7911722744ed396c9977ae1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa5d806852255a941b2a614d64daa332fb00f8b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("MovieManager.BLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MovieManager.BLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
