@@ -10,3 +10,16 @@ C:\Users\A440apulia\Desktop\Programmazione\C#\MovieManager\MovieManager.DAL\obj\
 C:\Users\A440apulia\Desktop\Programmazione\C#\MovieManager\MovieManager.DAL\obj\Debug\net10.0\refint\MovieManager.DAL.dll
 C:\Users\A440apulia\Desktop\Programmazione\C#\MovieManager\MovieManager.DAL\obj\Debug\net10.0\MovieManager.DAL.pdb
 C:\Users\A440apulia\Desktop\Programmazione\C#\MovieManager\MovieManager.DAL\obj\Debug\net10.0\ref\MovieManager.DAL.dll
+C:\Users\garof\Desktop\Programmazione\C#\CSharp-Layer\MovieManager.DAL\bin\Debug\net10.0\MovieManager.DAL.deps.json
+C:\Users\garof\Desktop\Programmazione\C#\CSharp-Layer\MovieManager.DAL\bin\Debug\net10.0\MovieManager.DAL.dll
+C:\Users\garof\Desktop\Programmazione\C#\CSharp-Layer\MovieManager.DAL\bin\Debug\net10.0\MovieManager.DAL.pdb
+C:\Users\garof\Desktop\Programmazione\C#\CSharp-Layer\MovieManager.DAL\obj\Debug\net10.0\MovieManager.DAL.csproj.AssemblyReference.cache
+C:\Users\garof\Desktop\Programmazione\C#\CSharp-Layer\MovieManager.DAL\obj\Debug\net10.0\MovieManager.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\garof\Desktop\Programmazione\C#\CSharp-Layer\MovieManager.DAL\obj\Debug\net10.0\MovieManager.DAL.AssemblyInfoInputs.cache
+C:\Users\garof\Desktop\Programmazione\C#\CSharp-Layer\MovieManager.DAL\obj\Debug\net10.0\MovieManager.DAL.AssemblyInfo.cs
+C:\Users\garof\Desktop\Programmazione\C#\CSharp-Layer\MovieManager.DAL\obj\Debug\net10.0\MovieManager.DAL.csproj.CoreCompileInputs.cache
+C:\Users\garof\Desktop\Programmazione\C#\CSharp-Layer\MovieManager.DAL\obj\Debug\net10.0\MovieManager.DAL.sourcelink.json
+C:\Users\garof\Desktop\Programmazione\C#\CSharp-Layer\MovieManager.DAL\obj\Debug\net10.0\MovieManager.DAL.dll
+C:\Users\garof\Desktop\Programmazione\C#\CSharp-Layer\MovieManager.DAL\obj\Debug\net10.0\refint\MovieManager.DAL.dll
+C:\Users\garof\Desktop\Programmazione\C#\CSharp-Layer\MovieManager.DAL\obj\Debug\net10.0\MovieManager.DAL.pdb
+C:\Users\garof\Desktop\Programmazione\C#\CSharp-Layer\MovieManager.DAL\obj\Debug\net10.0\ref\MovieManager.DAL.dll
