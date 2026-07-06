@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\garof\\Desktop\\Programmazione\\C#\\CSharp-Layer\\MovieManager.DAL\\MovieManager.DAL.csproj": {}
+    "C:\\Users\\A440apulia\\Desktop\\Programmazione\\C#\\MovieManager\\MovieManager.DAL\\MovieManager.DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\garof\\Desktop\\Programmazione\\C#\\CSharp-Layer\\MovieManager.DAL\\MovieManager.DAL.csproj": {
+    "C:\\Users\\A440apulia\\Desktop\\Programmazione\\C#\\MovieManager\\MovieManager.DAL\\MovieManager.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\garof\\Desktop\\Programmazione\\C#\\CSharp-Layer\\MovieManager.DAL\\MovieManager.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\A440apulia\\Desktop\\Programmazione\\C#\\MovieManager\\MovieManager.DAL\\MovieManager.DAL.csproj",
         "projectName": "MovieManager.DAL",
-        "projectPath": "C:\\Users\\garof\\Desktop\\Programmazione\\C#\\CSharp-Layer\\MovieManager.DAL\\MovieManager.DAL.csproj",
-        "packagesPath": "C:\\Users\\garof\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\garof\\Desktop\\Programmazione\\C#\\CSharp-Layer\\MovieManager.DAL\\obj\\",
+        "projectPath": "C:\\Users\\A440apulia\\Desktop\\Programmazione\\C#\\MovieManager\\MovieManager.DAL\\MovieManager.DAL.csproj",
+        "packagesPath": "C:\\Users\\A440apulia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\A440apulia\\Desktop\\Programmazione\\C#\\MovieManager\\MovieManager.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\garof\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\A440apulia\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"

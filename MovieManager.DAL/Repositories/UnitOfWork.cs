@@ -7,14 +7,12 @@ public class UnitOfWork : IUnitOfWork {
     private readonly DbContext _context;
     private readonly Dictionary<Type, object> _repositories;
 
-    public UnitOfWork(DbContext context)
-    {
+    public UnitOfWork(DbContext context) {
         _context = context;
         _repositories = new Dictionary<Type, object>();
     }
 
-    public IGenericRepository<T> Repository<T>() where T : class
-    {
+    public IGenericRepository<T> Repository<T>() where T : class {
         var type = typeof(T);
 
         if (_repositories.TryGetValue(type, out var existing))
@@ -28,14 +26,11 @@ public class UnitOfWork : IUnitOfWork {
         return repository;
     }
 
-    public async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
-    {
+    public async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default) {
         return await _context.SaveChangesAsync(cancellationToken);
     }
 
-    public void Dispose()
-    {
+    public void Dispose() {
         _context.Dispose();
-        GC.SuppressFinalize(this);
     }
 }

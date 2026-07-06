@@ -23,3 +23,4 @@ C:\Users\garof\Desktop\Programmazione\C#\CSharp-Layer\MovieManager.DAL\obj\Debug
 C:\Users\garof\Desktop\Programmazione\C#\CSharp-Layer\MovieManager.DAL\obj\Debug\net10.0\refint\MovieManager.DAL.dll
 C:\Users\garof\Desktop\Programmazione\C#\CSharp-Layer\MovieManager.DAL\obj\Debug\net10.0\MovieManager.DAL.pdb
 C:\Users\garof\Desktop\Programmazione\C#\CSharp-Layer\MovieManager.DAL\obj\Debug\net10.0\ref\MovieManager.DAL.dll
+C:\Users\A440apulia\Desktop\Programmazione\C#\MovieManager\MovieManager.DAL\obj\Debug\net10.0\MovieManager.DAL.csproj.AssemblyReference.cache
