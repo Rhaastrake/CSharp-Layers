@@ -143,3 +143,5 @@ C:\Users\A440apulia\Desktop\Programmazione\C#\MovieManager\MovieManager.PL.MVC\b
 C:\Users\A440apulia\Desktop\Programmazione\C#\MovieManager\MovieManager.PL.MVC\bin\Debug\net10.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\A440apulia\Desktop\Programmazione\C#\MovieManager\MovieManager.PL.MVC\bin\Debug\net10.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\A440apulia\Desktop\Programmazione\C#\MovieManager\MovieManager.PL.MVC\bin\Debug\net10.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\A440apulia\Desktop\Programmazione\C#\MovieManager\MovieManager.PL.MVC\bin\Debug\net10.0\AutoMapper.dll
+C:\Users\A440apulia\Desktop\Programmazione\C#\MovieManager\MovieManager.PL.MVC\bin\Debug\net10.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

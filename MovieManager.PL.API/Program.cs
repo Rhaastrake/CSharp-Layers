@@ -1,48 +1,49 @@
 using Microsoft.EntityFrameworkCore;
+using MovieManager.BLL.Models;
+using MovieManager.BLL.Services;
+using MovieManager.BLL.Services.Interfaces;
 using MovieManager.DAL.Data;
+using MovieManager.DAL.Entities;
 using MovieManager.DAL.Repositories;
 using MovieManager.DAL.Repositories.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
-                       ?? throw new InvalidOperationException("Connection string 'DefaultConnection' non trovato.");
+    ?? throw new InvalidOperationException("Connection string 'DefaultConnection' non trovato.");
 
 builder.Services.AddDbContext<MovieDbContext>(options => options.UseSqlServer(connectionString));
+
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+builder.Services.AddScoped<IMovieActorRepository, MovieActorRepository>();
+
+builder.Services.AddScoped<IGenericService<ActorModel>, GenericService<Actor, ActorModel>>();
+builder.Services.AddScoped<IGenericService<DirectorModel>, GenericService<Director, DirectorModel>>();
+builder.Services.AddScoped<IGenericService<GenreModel>, GenericService<Genre, GenreModel>>();
+builder.Services.AddScoped<IGenericService<MovieModel>, GenericService<Movie, MovieModel>>();
+builder.Services.AddScoped<IGenericService<ReviewModel>, GenericService<Review, ReviewModel>>();
+builder.Services.AddScoped<IMovieActorService, MovieActorService>();
+
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
 // Add services to the container.
+builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment()) {
+if (app.Environment.IsDevelopment())
+{
     app.MapOpenApi();
 }
 
 app.UseHttpsRedirection();
 
-var summaries = new[] {
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+app.UseAuthorization();
 
-app.MapGet("/weatherforecast", () => {
-        var forecast = Enumerable.Range(1, 5).Select(index =>
-                new WeatherForecast
-                (
-                    DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                    Random.Shared.Next(-20, 55),
-                    summaries[Random.Shared.Next(summaries.Length)]
-                ))
-            .ToArray();
-        return forecast;
-    })
-    .WithName("GetWeatherForecast");
+app.MapControllers();
 
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary) {
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
