@@ -53,5 +53,21 @@ namespace MovieManager.BLL.Services
             await _unitOfWork.SaveChangesAsync(cancellationToken);
             return true;
         }
+        
+        public async Task<bool> UpdateAsync(MovieActorModel model, CancellationToken cancellationToken = default)
+        {
+            var entity = await _movieActorRepository.GetByIdsAsync(model.MovieId, model.ActorId, cancellationToken);
+            if (entity == null)
+            {
+                return false;
+            }
+
+            entity.CharacterName = model.CharacterName;
+            entity.IsLeadRole = model.IsLeadRole;
+            entity.DisplayOrder = model.DisplayOrder;
+
+            await _unitOfWork.SaveChangesAsync(cancellationToken);
+            return true;
+        }
     }
 }

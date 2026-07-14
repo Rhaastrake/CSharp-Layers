@@ -8,5 +8,6 @@ namespace MovieManager.BLL.Services.Interfaces
         Task<IReadOnlyList<MovieActorModel>> GetByMovieIdAsync(int movieId, CancellationToken cancellationToken = default);
         Task<MovieActorModel> CreateAsync(MovieActorModel model, CancellationToken cancellationToken = default);
         Task<bool> DeleteAsync(int movieId, int actorId, CancellationToken cancellationToken = default);
+        Task<bool> UpdateAsync(MovieActorModel model, CancellationToken cancellationToken = default);
     }
 }
